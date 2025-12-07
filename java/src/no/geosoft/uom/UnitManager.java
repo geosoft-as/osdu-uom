@@ -10,6 +10,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Properties;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
@@ -380,8 +381,8 @@ public final class UnitManager
    */
   public boolean canConvert(String unitSymbol1, String unitSymbol2)
   {
-    if (unitSymbol1 == null || unitSymbol2 == null)
-      return false;
+    if (Objects.equals(unitSymbol1, unitSymbol2))
+      return true;
 
     Unit unit1 = findUnit(unitSymbol1);
     Unit unit2 = findUnit(unitSymbol2);

@@ -4,7 +4,7 @@
 #
 
 #
-# Schlumberger
+# SLB
 #
 deg = dega
 KJ = kJ
@@ -26,3 +26,4 @@ us/f = us/ft
 # f = ft  Careful. "F" is officially Fahrenhait
 .1in = in/10
 meters = m
+none = unitless
